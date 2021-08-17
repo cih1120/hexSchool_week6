@@ -13127,6 +13127,10 @@ span {
   border: 0;
 }
 
+.ticketButton-input {
+  width: 3rem;
+}
+
 .ticket-type {
   padding: 3px;
   border-bottom: 2px solid transparent;
@@ -13185,6 +13189,13 @@ span {
   padding-bottom: 24px;
   background-color: #fff;
   margin-bottom: 12px;
+  width: 500px;
+}
+
+@media (min-width: 768px) {
+  .chartModal__card {
+    width: 100%;
+  }
 }
 
 .chartModal__card_row {

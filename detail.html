@@ -18,7 +18,7 @@
       <ul class="header__list d-flex position-absolute top-50 end-0 translate-middle">
         <li class="d-none d-lg-block"><a href="#" class="h6 text-dark me-5">Sign in</a></li>
         <li class="d-none d-lg-block"><a href="#" class="h6 text-dark me-5">Sign up</a></li>
-        <li><a href="#" class="h6 text-black position-relative">
+        <li><a href="#" id="addChart" class="h6 text-black position-relative">
           <span class="material-icons">confirmation_number</span>
           <span class="state-number">3</span>
         </a></li>
@@ -26,116 +26,117 @@
      </div>
    </header>
 
-    <div class="chartModal bg-black d-flex flex-column w-100 " id="chartModal">
-            <div class="chartModal__header mb-2">
-                <h3 class="fw-bold text-white">Cart List</h3>
-            </div>
-            <ul class="chartModal__list pe-3">
-                <li class="chartModal__card">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="chartModal__card_row px-5 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
-                        <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
-                            <div>
-                                <h6 class="fw-bold">2020 台味設計展</h6>
-                                <h6 class=" mt-1">01 JUN — 31 OCT</h6>
-                                <h6 class="text-dark mt-1">全票</h6>
-                            </div>
-                            <h5 class="fw-bold mt-auto">NT$350</h5>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="ticketButton h5 fw-light">-</button>
-                            <input type="number" class="h5 text-center border-0 fw-bold" value="01">
-                            <button class="ticketButton h6 fw-light">+</button>
-                        </div>
+   <div class="chartModal bg-black d-flex flex-column w-100 " id="chartModal">
+    <div class="chartModal__header mb-2">
+        <h3 class="fw-bold text-white">Cart List</h3>
+    </div>
+    <ul class="chartModal__list pe-md-3">
+        <li class="chartModal__card">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="chartModal__card_row px-5 d-flex justify-content-between align-items-center">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+                <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
+                    <div>
+                        <h6 class="fw-bold">2020 台味設計展</h6>
+                        <h6 class=" mt-1">01 JUN — 31 OCT</h6>
+                        <h6 class="text-dark mt-1">全票</h6>
                     </div>
-                </li>
-                <li class="chartModal__card">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="chartModal__card_row px-5 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
-                        <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
-                            <div>
-                                <h6 class="fw-bold">2020 台味設計展</h6>
-                                <h6 class=" mt-1">01 JUN — 31 OCT</h6>
-                                <h6 class="text-dark mt-1">全票</h6>
-                            </div>
-                            <h5 class="fw-bold mt-auto">NT$350</h5>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="ticketButton h5 fw-light">-</button>
-                            <input type="number" class="h5 text-center border-0 fw-bold" value="01">
-                            <button class="ticketButton h6 fw-light">+</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="chartModal__card">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="chartModal__card_row px-5 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
-                        <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
-                            <div>
-                                <h6 class="fw-bold">2020 台味設計展</h6>
-                                <h6 class=" mt-1">01 JUN — 31 OCT</h6>
-                                <h6 class="text-dark mt-1">全票</h6>
-                            </div>
-                            <h5 class="fw-bold mt-auto">NT$350</h5>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="ticketButton h5 fw-light">-</button>
-                            <input type="number" class="h5 text-center border-0 fw-bold" value="01">
-                            <button class="ticketButton h6 fw-light">+</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="chartModal__card">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="chartModal__card_row px-5 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
-                        <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
-                            <div>
-                                <h6 class="fw-bold">2020 台味設計展</h6>
-                                <h6 class=" mt-1">01 JUN — 31 OCT</h6>
-                                <h6 class="text-dark mt-1">全票</h6>
-                            </div>
-                            <h5 class="fw-bold mt-auto">NT$350</h5>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="ticketButton h5 fw-light">-</button>
-                            <input type="number" class="h5 text-center border-0 fw-bold" value="01">
-                            <button class="ticketButton h6 fw-light">+</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="chartModal__card">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="chartModal__card_row px-5 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
-                        <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
-                            <div>
-                                <h6 class="fw-bold">2020 台味設計展</h6>
-                                <h6 class=" mt-1">01 JUN — 31 OCT</h6>
-                                <h6 class="text-dark mt-1">全票</h6>
-                            </div>
-                            <h5 class="fw-bold mt-auto">NT$350</h5>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="ticketButton h5 fw-light">-</button>
-                            <input type="number" class="h5 text-center border-0 fw-bold" value="01">
-                            <button class="ticketButton h6 fw-light">+</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="mt-auto d-flex justify-content-between w-100">
-                <div class="d-flex fw-bold text-white">
-                    <h5 class="me-4">小計</h5>
-                    <h5>NT$1050</h5>
+                    <h5 class="fw-bold mt-auto">NT$350</h5>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="ticketButton h5 fw-light">-</button>
+                    <input type="number" class="ticketButton-input h5 text-center border-0 fw-bold" value="01">
+                    <button class="ticketButton h6 fw-light">+</button>
                 </div>
             </div>
-  </div>
+        </li>
+        <li class="chartModal__card">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="chartModal__card_row px-5 d-flex justify-content-between align-items-center">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+                <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
+                    <div>
+                        <h6 class="fw-bold">2020 台味設計展</h6>
+                        <h6 class=" mt-1">01 JUN — 31 OCT</h6>
+                        <h6 class="text-dark mt-1">全票</h6>
+                    </div>
+                    <h5 class="fw-bold mt-auto">NT$350</h5>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="ticketButton h5 fw-light">-</button>
+                    <input type="number" class="ticketButton-input h5 text-center border-0 fw-bold" value="01">
+                    <button class="ticketButton h6 fw-light">+</button>
+                </div>
+            </div>
+        </li>
+        <li class="chartModal__card">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="chartModal__card_row px-5 d-flex justify-content-between align-items-center">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+                <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
+                    <div>
+                        <h6 class="fw-bold">2020 台味設計展</h6>
+                        <h6 class=" mt-1">01 JUN — 31 OCT</h6>
+                        <h6 class="text-dark mt-1">全票</h6>
+                    </div>
+                    <h5 class="fw-bold mt-auto">NT$350</h5>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="ticketButton h5 fw-light">-</button>
+                    <input type="number" class="ticketButton-input h5 text-center border-0 fw-bold" value="01">
+                    <button class="ticketButton h6 fw-light">+</button>
+                </div>
+            </div>
+        </li>
+        <li class="chartModal__card">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="chartModal__card_row px-5 d-flex justify-content-between align-items-center">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+                <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
+                    <div>
+                        <h6 class="fw-bold">2020 台味設計展</h6>
+                        <h6 class=" mt-1">01 JUN — 31 OCT</h6>
+                        <h6 class="text-dark mt-1">全票</h6>
+                    </div>
+                    <h5 class="fw-bold mt-auto">NT$350</h5>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="ticketButton h5 fw-light">-</button>
+                    <input type="number" class="ticketButton-input h5 text-center border-0 fw-bold" value="01">
+                    <button class="ticketButton h6 fw-light">+</button>
+                </div>
+            </div>
+        </li>
+        <li class="chartModal__card">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="chartModal__card_row px-5 d-flex justify-content-between align-items-center">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+                <div class="ms-3 h-100 d-flex flex-column justify-content-betweem">
+                    <div>
+                        <h6 class="fw-bold">2020 台味設計展</h6>
+                        <h6 class=" mt-1">01 JUN — 31 OCT</h6>
+                        <h6 class="text-dark mt-1">全票</h6>
+                    </div>
+                    <h5 class="fw-bold mt-auto">NT$350</h5>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="ticketButton h5 fw-light">-</button>
+                    <input type="number" class="ticketButton-input h5 text-center border-0 fw-bold" value="01">
+                    <button class="ticketButton h6 fw-light">+</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="mt-auto d-flex justify-content-between w-100">
+        <div class="d-flex fw-bold text-white">
+            <h5 class="me-4">小計</h5>
+            <h5>NT$1050</h5>
+        </div>
+    </div>
+</div>
 
-<section class="container pt-8 mt-4">
+    
+<section class="container pt-8 mt-4 ">
 <div class="row">
     <div class="col-12 col-md-6 g-0">
         <div class="d-flex ticket-height bgCenter" style="background-image: url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
@@ -176,14 +177,14 @@
         <div class="d-flex mt-6 w-100">
             <div class="d-flex mx-auto w-100 px-2">
                 <a href="#" class="w-50 btn btn-outline-secondary me-2" >收藏展覽</a>
-                <a href="#" id="addChart" class="w-50 btn btn-secondary">購買票券</a>
+                <a href="#" class="w-50 btn btn-secondary">購買票券</a>
             </div>
         </div>
     </div>
     
 </div>
 </section>
-<section class="​mt-6 mb-6 container">
+<section class="container mt-6 mb-6">
     <div class="celebration row d-md-column d-column-reverse">
         <div class="celebration__firstImg mt-md-0 mt-3 col-12 bgCenter order-md-1 order-2 bgCenter"></div>
         <div class="celebration__sideImg mt-md-5 mt-3 col-md-4 col-12 bgCenter order-md-2 order-3">  </div>
